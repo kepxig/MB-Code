@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="servlet-api">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/servlet-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/mysql-connector-java-8.0.22.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/fastjson-1.2.75.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/junit-4.13.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
