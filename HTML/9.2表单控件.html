@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>一些控件</title>
+</head>
+
+<body>
+
+    <!--
+            1.
+                multiple：下拉列表支持多选 size设置显示条目数量
+        -->
+    <select multiple="multiple" size="2 ">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+    </select>
+
+    <br>
+    <!--
+            2.
+                file控件:上传文件
+        -->
+    <input type="file" />
+    <br>
+
+    <form action="http://localhost:8080/nmsl/xx">
+        <!--
+            3.
+            hidden隐藏域:
+            网页上看不到，但是表单提交时会提交给服务器
+        -->
+        <input type="hidden" name="userid" value="111" />
+        用户代码<input type="text" name="usercode" />
+        <input type="submit" value="提交" />
+    </form>
+    <br>
+    <!--
+        4.
+            readonly和disabled
+                相同:都是只读 无法修改
+                不同:前者可以提交给服务器后者不可以
+
+    -->
+    <form action="http://localhost:8080/nmsl/xx">
+        用户代码<input type="text" name="usercode" value="111" readonly/>
+        <br>
+        用户姓名<input type="text" name="username" value="222" disabled/>
+        <br>
+        <input type="submit" value="提交"/>
+    </form>
+    <br>
+    <!--
+        5.input的maxlenth
+            限制文本框中可输入的字符数量
+    -->
+    <input type="text" maxlength="3"/>
+</body>
+
+</html>

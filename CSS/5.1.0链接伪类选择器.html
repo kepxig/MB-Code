@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        /*顺序不能乱*/
+        a:link{ /*:link:未访问的链接*/
+            font-size:16px;
+            color:gray;
+            font-weight: bold;
+        }
+        a:visited{ /*:visited:已访问过的链接*/
+            font-size:16px;
+            color:orange;
+            font-weight: 700;
+        }
+        a:hover{ /*:hover:鼠标经过时*/
+            font-size:16px;
+            color:red;
+            font-weight: 700;
+        }
+        a:active{ /*:active:选定的链接 （按住时）*/
+            font-size:16px;
+            color:green;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    伪类选择器中的  链接伪类选择器 主要针对于 a
+    <div>
+        <a href="#">秒杀</a>
+        <a href="#">闪购</a>
+    </div>
+</body>
+</html>

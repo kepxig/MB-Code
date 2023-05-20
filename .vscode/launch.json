@@ -1,0 +1,76 @@
+// https://github.com/Microsoft/vscode-cpptools/blob/master/launch.md
+{ /*保留终端*/
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(Windows) 启动",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${fileDirname}\\exe\\${fileBasenameNoExtension}.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "console": "externalTerminal",
+         //   "preLaunchTask": "Compile"
+        },
+        {
+            "name": "(gdb) 启动",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}\\exe\\${fileBasenameNoExtension}.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            //"externalConsole": true,
+            "MIMode": "gdb",
+            "miDebuggerPath": "D:\\4\\Dev-Cpp\\MinGW64\\bin\\gdb.exe",
+            "setupCommands": [
+                {
+                    "description": "为 gdb 启用整齐打印",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+           // "preLaunchTask": "Compile",
+        },
+        /*
+        {
+            "name": "CPP",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "cmd",
+            "args": [
+                "/C",
+                "${fileDirname}\\exe\\${fileBasenameNoExtension}.exe",
+                "&",
+                "pause"
+            ],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "console": "externalTerminal",
+            "preLaunchTask": "Compile" // 调试会话开始前执行的任务，一般为编译程序。与tasks.json的label相对应
+        },
+        //这个方法主要是通过cmd的参数 "/C" 来实现，它的效果是:"执行字符串指定的命令然后终止"。此外，还可以通过 ”help cmd“来查看所有可用的参数。
+       */
+        {
+            "name": "Python",
+            "type": "python",
+            "request": "launch",
+            "stopOnEntry": false,
+            "python": "D:\\3\\Anaconda\\python.exe",
+            "program": "${file}",
+            "cwd": "${fileDirname}",
+            "env": {},
+            "envFile": "${workspaceFolder}/.env",
+            "console": "externalTerminal",
+        }
+    ]
+}

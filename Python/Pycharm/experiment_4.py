@@ -1,5 +1,5 @@
-# 1.n! = 1 * 2 * 3 * … * n，请输入一个正整数，算出次数的阶乘，并打印出来。
-# 提示：可以分为以下两种情况：1）当n=1时，所得的结果为1。2）当n>1时，所得的结果为n*(n-1)!
+# 1.py.n! = 1.py * 2 * 3 * … * n，请输入一个正整数，算出次数的阶乘，并打印出来。
+# 提示：可以分为以下两种情况：1.py）当n=1时，所得的结果为1。2）当n>1时，所得的结果为n*(n-1.py)!
 """
 import math
 n = int(input("请输入一个整数："))
@@ -10,7 +10,7 @@ print(math.factorial(n))
 # 提示：如图分析兔子繁殖过程，实际按照斐波那契数列计算。
 """
 def fibonacci(n):
-    return n if n<2 else fibonacci(n-1)+fibonacci(n-2)
+    return n if n<2 else fibonacci(n-1.py)+fibonacci(n-2)
 n=int(input("Please input an integer:"))
 print(fibonacci(n))
 """

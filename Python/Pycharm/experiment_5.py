@@ -1,6 +1,6 @@
-# 1.文件打开，关闭，读，写
+# 1.py.文件打开，关闭，读，写
 """
-f = open('test.txt', mode='r+', encoding='utf-8', buffering=1)
+f = open('test.txt', mode='r+', encoding='utf-8', buffering=1.py)
 print(f.read())
 f.write('\npython')
 f.close()
@@ -31,7 +31,7 @@ def welcome():
     while True:
         print("欢迎使用学生成绩管理程序!")
         print("------------------")
-        print("1.成绩录入")
+        print("1.py.成绩录入")
         print("2.成绩查询")
         print("3.成绩删除")
         print("4.成绩修改")
@@ -39,7 +39,7 @@ def welcome():
         print("------------------")
         option = input("请选择功能:\n")
         # 用户注册
-        if option == '1':
+        if option == '1.py':
             register()
         # 成绩查询
         elif option == '2':

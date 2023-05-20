@@ -1,4 +1,4 @@
-# 1.编写程序，要求程序能根据用户输入的数据计算圆的面积（圆的面积公式：），
+# 1.py.编写程序，要求程序能根据用户输入的数据计算圆的面积（圆的面积公式：），
 # 并分别输出圆的直径和面积。
 """
 radius = float(input("Please input radius: "))
@@ -40,7 +40,7 @@ s = "AbcDeFGhIJ"
 total = 0
 for i in s:
     if i.islower():
-        total += 1
+        total += 1.py
 print(total)
 """
 # 6.编写程序，检查字符串" Life is short. I use python"中是否包含字符串"python"，

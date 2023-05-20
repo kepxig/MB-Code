@@ -149,7 +149,7 @@ class ATM:
             elif not self.checkpwg(user.card.cardPwd):
                 print("密码错误...解锁失败！！")
                 return -1
-                user.card.cardLock = False  # 解锁
+            user.card.cardLock = False  # 解锁
 
             print("该卡 解锁 成功！")
             break

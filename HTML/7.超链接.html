@@ -1,0 +1,47 @@
+<!--
+    超链接的作用：
+        通过超链接可以从浏览器像服务器发送请求。
+        浏览器向服务器发送数据(请求：request)
+        服务器向浏览器发送数据(相应:response)
+
+        B/S结构的系统 每一个请求都会对应一个响应
+        B --请求-- S
+        S --响应-- B
+
+    用户点击超链接和用户在浏览器地址栏上直接输入URL，有什么区别？
+        本质上没有区别，都是向服务器发送请求
+        从操作上来讲，超链接更方便
+    -->
+<!doctype html>
+<html>
+    <head>
+        <title>超链接（热链接）</title>
+    </head>
+    <body>
+        <!--
+            href:hypertext reference
+            href属性后跟资源的地址
+            href后面的路径可以是绝对路径也可以是相对路径
+                可以是网络中某个资源的路径
+                也可以是本地资源的路径
+        -->
+        <a href="https://www.baidu.com">百度</a>
+        <br><br>
+        <a href="./6.图片img.html">win！</a>
+        <br><br>
+        <!--图片超链接结合-->
+        <a href="https://www.blued.cn">
+            <img src="./img/win.gif" width="100px"/>
+        </a>
+        <!--
+            超链接有一个target属性：
+                可取值：
+                    _blank  新窗口
+                    _self   当前窗口
+                    _top    顶级窗口
+                    _parent 父窗口
+        -->
+        <br><br><br>
+        <a href="https://www.baidu.com" target="_blank">百度</a>
+    </body>
+</html>

@@ -6,7 +6,7 @@ def menu():
     print('''
     -----学生成绩管理系统-----
     
-    1.添加学生成绩
+    1.py.添加学生成绩
     2.查看所有成绩
     3.删除成绩
     4.修改成绩
@@ -25,7 +25,7 @@ def main():
         if option == '0':
             print('已退出')
             ctrl = False
-        elif option == '1':
+        elif option == '1.py':
             add()
         elif option == '2':
             show()

@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+    <head>
+        <title>用户注册表单</title>
+    </head>
+    <body>
+        <!--
+            用户注册:
+                用户名
+                密码
+                确认密码
+                性别
+                兴趣爱好
+                学历
+                简介
+            
+            form表单属性method:
+                get:用户提交的信息会显示在浏览器的地址栏上(默认)
+                post：用户提交的信息不会......
+                当用户提交的信息中含有敏感信息(密码)时，建议采用post方式提交
+            -->
+            <form action="http://localhost:8080/jd/register" method="post">
+                用户名
+                <input type="text" name="username"/>
+                <br>
+                密码
+                <input type="password" name="userpwd"/>
+                <br>
+                确认密码
+                <input type="password" />
+                <br>
+                性别
+                <!--
+                    name相同代表同一组数据，实现单选
+                    单选按钮的value需要手动指定
+                -->
+                <input type="radio" name="gender" value="M"/>男
+                <input type="radio"name="gender" value="F"/>女
+                <br>
+                兴趣爱好
+                <!--checked:默认选中-->
+                <input type="checkbox" name="hobby" value="reading"/>阅读
+                <input type="checkbox" name="hobby" value="music" checked/>音乐
+                <input type="checkbox" name="hobby" value="sport" checked/>运动
+                <br>
+                学历
+                <!--
+                    selected:默认选中
+                -->
+                <select name="degree">
+                    <option value="gz">
+                    高中
+                    </option>
+                    <option value="dz">
+                    大专
+                    </option>
+                    <option value="bk" selected>
+                    本科
+                    </option>
+                    <option value="yjs">
+                    研究生
+                    </option>
+                </select>
+                <br>
+                简介
+                <!--
+                    textarea:文本域
+                -->
+                <textarea rows="10" cols="60" name="introduction">
+                </textarea>
+                <br>
+                <input type="submit" value="注册"/>
+                <input type="reset" value="清空"/>
+        </form>
+        <!--
+            超链接也可以提交数据给服务器，但是提交的数据的固定的
+            超链接是get请求不是post请求
+        -->
+        <a href="http://localhost:8080/nmsl/xx?username=zhouyinting&userpwd=nmsl">提交</a>
+    </body>
+</html>

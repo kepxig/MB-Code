@@ -4,8 +4,11 @@
 			"path": "C"
 		},
 		{
+			"path": "CPP"
+		},
+		{
 			"path": "."
-		}
+		},
 	],
 	"settings": {
 		"files.defaultLanguage": "c",

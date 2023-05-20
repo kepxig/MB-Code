@@ -1,49 +1,40 @@
-#include <stdio.h>
-#define N 10
-typedef struct
+#include <string.h>
+
+#include <stdlib.h>
+
+void intersection(int *A, int *B, int lenA, int lenB, int **C, int *lenC)
 {
-	int a[N];
-	int length;
-} List;
+	/*
+
+	A表示数组A，B表示数组B，lenA表示数组A的长度，lenB表示数组
+	B的长度，C表示结果，lenC表示结果的长度
+	需要将交集存放在数组C中。
+  */
+
+	/*********Begin********/
+	for (int i = 0; i < lenA; i++)
+	{
+		if (A[i])
+			C[A[i]] += 1;
+	}
+	/*for (int i = 0; i < lenB; i++)
+
+	{
+	}
+	/*********End*********/
+}
 int main()
 {
-	List L;
-	int i, x;
-	printf("length(1-10)=");
-	scanf("%d", &L.length);
-	printf("please enter numbers to list:");
-	for (i = 0; i < L.length; i++)
-		scanf("%d", &L.a[i]);
-	printf("\nNumbers in List:");
-	for (i = 0; i < L.length; i++)
-		printf("%d ", L.a[i]);
-	printf("\n%d\n",L.length);
-	printf("please enter a number you want to insert into List:");
-	scanf("%d", &x);
-	if (!insert_a(&L, x))
-		printf("No space!");
-	else
+	int A[] = {1, 2, 0, 2, 1};
+	int B[] = {2, 3, 6, 7};
+	int lenA = sizeof(A);
+	int lenB = sizeof(B);
+	int C[] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+	int lenC = sizeof(C);
+	intersection(A, B, lenA, lenB, C, lenC);
+	for (int i = 0; i < lenC; i++)
 	{
-		printf("\nNumbers in List:");
-		for (i = 0; i < L.length; i++)
-			printf("%d ", L.a[i]);
-		printf("\n");
+		print("%d", C[i]);
 	}
-}
-
-int insert_a(List *b, int e)
-{
-	int j;
-	if (b->length + 1 > N)
-		return 0;
-	for (j = N - 1; j >= 0; j--)
-	{
-		if (e < b->a[j])
-			b->a[j + 1] = b->a[j];
-		else
-			break;
-		b->a[j + 1] = e;
-		b->length++;
-		return 1;
-	}
+	return 0;
 }

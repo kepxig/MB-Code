@@ -1,5 +1,8 @@
 ###
 Pycharm常用快捷键（windows）
+Ctrl + Alt + L
+代码格式化
+
 Ctrl + Q
 快速查看文档
 
@@ -11,8 +14,6 @@ Ctrl + F1
 
 Ctrl + / 行注释 / 取消注释（可选中多行）
 
-Ctrl + Alt + L
-代码格式化
 
 Ctrl + Alt + O
 自动导入包

@@ -1,0 +1,182 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "ParallelMergeSort",
+            "request": "launch",
+            "mainClass": "mergesort.ParallelMergeSort",
+            "projectName": "Java_6f937421"
+        },
+        {
+            "type": "java",
+            "name": "ProducerConsumer",
+            "request": "launch",
+            "mainClass": "ProducerConsumer",
+            "projectName": "Java_6f937421"
+        },
+        {
+            "type": "java",
+            "name": "ReenterLock",
+            "request": "launch",
+            "mainClass": "ReenterLock",
+            "projectName": "Java_6f937421"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "Java_6f937421"
+        },
+        {
+            "type": "java",
+            "name": "ExtendedThreadPool",
+            "request": "launch",
+            "mainClass": "ExtendedThreadPool",
+            "projectName": "Java_6f937421"
+        },
+        {
+            "type": "java",
+            "name": "AbortPolicy",
+            "request": "launch",
+            "mainClass": "AbortPolicy",
+            "projectName": "Java_6f937421"
+        },
+        {
+            "type": "java",
+            "name": "newScheduledThreadPool",
+            "request": "launch",
+            "mainClass": "newScheduledThreadPool",
+            "projectName": "Java_6f937421"
+        },
+        {
+            "type": "java",
+            "name": "FixedThreadPoolExample",
+            "request": "launch",
+            "mainClass": "threadpool.FixedThreadPoolExample",
+            "projectName": "Java_6f937421"
+        },
+        {
+            "type": "java",
+            "name": "FixedThreadPoolExample",
+            "request": "launch",
+            "mainClass": "kepxig.threadpool.FixedThreadPoolExample",
+            "projectName": "Java_6f937421"
+        },
+        {
+            "type": "java",
+            "name": "SingleThreadPoolExample",
+            "request": "launch",
+            "mainClass": "kepxig.threadpool.SingleThreadPoolExample",
+            "projectName": "Java_6f937421"
+        },
+        {
+            "type": "java",
+            "name": "SingleThreadPoolExample",
+            "request": "launch",
+            "mainClass": "SingleThreadPoolExample",
+            "projectName": "Java_6f937421"
+        },
+        {
+            "type": "java",
+            "name": "FixedThreadPoolExample",
+            "request": "launch",
+            "mainClass": "com.kepxig.threadpool.FixedThreadPoolExample",
+            "projectName": "Java_6f937421"
+        },
+        {
+            "type": "java",
+            "name": "SingleThreadPoolExample",
+            "request": "launch",
+            "mainClass": "com.kepxig.threadpool.SingleThreadPoolExample",
+            "projectName": "Java_6f937421"
+        },
+        {
+            "type": "java",
+            "name": "FixedThreadPoolExample",
+            "request": "launch",
+            "mainClass": "FixedThreadPoolExample",
+            "projectName": "Java_6f937421"
+        },
+        {
+            "type": "java",
+            "name": "ReentrantReadWriteLockTest",
+            "request": "launch",
+            "mainClass": "com.kepxig.sychronize.ReentrantReadWriteLockTest",
+            "projectName": "Java_6f937421"
+        },
+        {
+            "type": "java",
+            "name": "ReentrantLockFairTest",
+            "request": "launch",
+            "mainClass": "com.kepxig.sychronize.ReentrantLockFairTest",
+            "projectName": "Java_6f937421"
+        },
+        {
+            "type": "java",
+            "name": "CountDownLatchTest",
+            "request": "launch",
+            "mainClass": "com.kepxig.sychronize.CountDownLatchTest",
+            "projectName": "Java_6f937421"
+        },
+        {
+            "type": "java",
+            "name": "ReenterLock",
+            "request": "launch",
+            "mainClass": "com.kepxig.sychronize.ReenterLock",
+            "projectName": "Java_6f937421"
+        },
+        {
+            "type": "java",
+            "name": "SafeTicketsWindow",
+            "request": "launch",
+            "mainClass": "com.kepxig.spontaneous.SafeTicketsWindow",
+            "projectName": "Java_6f937421"
+        },
+        {
+            "type": "java",
+            "name": "createThreadCallable",
+            "request": "launch",
+            "mainClass": "com.kepxig.multithread.callable.createThreadCallable",
+            "projectName": "Java_6f937421"
+        },
+        {
+            "type": "java",
+            "name": "CreateThreadDemo11_Callable",
+            "request": "launch",
+            "mainClass": "com.kepxig.multithread.callable.CreateThreadDemo11_Callable",
+            "projectName": "Java_6f937421"
+        },
+        {
+            "type": "java",
+            "name": "CreateThreadDemo4_Main",
+            "request": "launch",
+            "mainClass": "com.kepxig.multithread.runnable.CreateThreadDemo4_Main",
+            "projectName": "Java_6f937421"
+        },
+        {
+            "type": "java",
+            "name": "CreateMultiThreadDemo2",
+            "request": "launch",
+            "mainClass": "com.kepxig.thread.create.CreateMultiThreadDemo2",
+            "projectName": "Java_6f937421"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "CreateThreadDemo1",
+            "request": "launch",
+            "mainClass": "com.kepxig.thread.create.CreateThreadDemo1",
+            "projectName": "Java_6f937421"
+        }
+    ]
+}

@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+    <head>
+        <title>表单form</title>
+    </head>
+    <body>
+        <!--
+            1.作用:收集用户信息
+                    表单展现后，用户填写表单，点击提交按钮提交数据给服务器
+            2.使用form标签绘画一个表单
+            3.一个网页当中可以有多个表单
+            4.表单最终需要提交数据给服务器
+            5.form标签有一个action属性，这个属性用来指定服务器地址。
+                action属性用来指定数据提交给哪个服务器
+                action属性和超链接中的href属性一样，都可以像像服务器发送请求(request)
+                
+                http://192.168.111.3:8080/oa/save 这是请求路径，
+                表单提交数据最终替他交给192.168.111.3机器上的8080端口对应的软件
+            -->
+        <form action="http://192.168.111.3:8080/oa/save">
+            <!--
+                画一个提交按钮，这个按钮可以提交表单
+                input
+                画按钮可以使用input输入域
+                type属性
+                type="submit"时，表示该按钮是一个提交按钮，具有提交表单的能力
+                value属性
+                对于按钮来说,value属性用来指定按钮上的文本信息
+                
+                超链接和表单都可以向服务器发送请求，只是表单可以携带数据
+            -->
+            <input type="button" value="设置按钮上的文本"/><br>
+            <input type="submit" value="注册"/>
+        </form>
+
+        <br><br><br>
+
+        <form action="http://localhost:8080/jd/save">
+            用户名<input type="text"/><br>
+            密码<input type="password"/><br>
+            <input type="submit" value="登录"/>
+        </form>
+
+        <br><br><br>
+
+        <!--
+            表单是以什么格式提交给服务器的？
+            http://localhost:8080/jd/save?username=17689682339&userpwd=damb.233
+                格式: action?name=value&name=value&name=value......(name=value)
+                W3C的HTTP协议规定的
+            文本框和密码框的value不需要程序员指定，由用户填写
+
+            当name没有写的时候，该项不会提交给服务器
+            当value没写的时候，value默认为空字符串(string s="")提交给服务器
+        -->
+
+        <form action="http://localhost:8080/jd/save">
+            <table border="1px">
+                <tr>
+                    <td>用户名</td>
+                    <td><input type="text" name="username"/></td>
+                </tr>
+                <tr>
+                    <td>密码</td>
+                    <td><input type="password" name="userpwd"/ ></td>
+                </tr>
+                <tr align="center">
+                    <td colspan="2">
+                        <!--submit/ reset必须放到form标签内部-->
+                        <input type="submit" value="登录" />
+                        &nbsp;
+                        <input type="reset" value="清空" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+    </body>
+</html>

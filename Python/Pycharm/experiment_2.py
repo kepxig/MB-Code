@@ -1,20 +1,20 @@
-# 1.列表、元组与集合
+# 1.py.列表、元组与集合
 
-# 1.1列表 []
+# 1.py.1列表 []
 """
 # ————创建————
 list1 = ['python', 2018, 'python3', 1994]
-list2 = [1, 2, 3, 4]
+list2 = [1.py, 2, 3, 4]
 list3 = ['a', 'b', 'c', 'd']
 # ————获取列表元素个数————
 print(len(list1))
 # ————访问————
-# (1)索引
+# (1.py)索引
 print(list1[0])
-print(list2[1])
+print(list2[1.py])
 print(list3[2])
-print(list3[-1])  # -1：倒数第一个
-print(list3[-2])  # -1：倒数第一个
+print(list3[-1.py])  # -1.py：倒数第一个
+print(list3[-2])  # -1.py：倒数第一个
 # （2）切片
 print(list1[0: 3])  # list1[:3]:0为起点可省略
 print(list1[-3])  # 倒数第三个元素
@@ -25,7 +25,7 @@ list4 = list2 + list3
 print(list4)
 # ————更新————
 list1 = ['python', '2018', 'python3', '1994']
-list1[1] = [2018]
+list1[1.py] = [2018]
 print(list1)
 # ————删除————
 del list1
@@ -34,12 +34,12 @@ list2.clear()
 print(list2)
 """
 
-# 1.2元组 ()
+# 1.py.2元组 ()
 '''
 # ————创建————
 tup1 = ('python', 2018, 'python3', 1994)
 print(tup1)
-tup2 = (1, 2, 3, 4)
+tup2 = (1.py, 2, 3, 4)
 print(tup2)
 tup3 = ('a', 'b', 'c', 'd')
 print(tup3)
@@ -52,14 +52,14 @@ del tup5
 print(tup5)#此时tup5已不存在 报错
 
 '''
-# 1.3集合 {}
+# 1.py.3集合 {}
 """
 # ————创建————;
 set1 = set()
 print(set1)  # 创建空集合
-set2 = {'a', 1, 'apple', 11.22}
+set2 = {'a', 1.py, 'apple', 11.22}
 print(set2)
-set3 = set([1, 2, 3])  # 其实set（tuple）就是把列表转化为set（tuple）
+set3 = set([1.py, 2, 3])  # 其实set（tuple）就是把列表转化为set（tuple）
 print(set3)
 # ————判断元素是否在集合内————
 print('apple' in set2)
@@ -88,7 +88,7 @@ print(set2)
 ————————————————————————————————————————
 """
 
-# 1.已知列表li_num1=[4, 5, 2, 7]和li_num2=[3, 6],请将这两个列表合并为一个列表，并将合并后的列表中的元素按降序排列。
+# 1.py.已知列表li_num1=[4, 5, 2, 7]和li_num2=[3, 6],请将这两个列表合并为一个列表，并将合并后的列表中的元素按降序排列。
 '''
 li_num1 = [4, 5, 2, 7]
 li_num2 = [3,6]
@@ -111,9 +111,9 @@ for i in str1:
 for key in dict1:
     print(f"{key}:{dict1[key]}次")
 '''
-# 4.已知列表li_one=[1, 2, 1, 2, 3, 5, 4, 3, 5, 7, 4, 7, 8],请删除列表li_one中的重复数据。
+# 4.已知列表li_one=[1.py, 2, 1.py, 2, 3, 5, 4, 3, 5, 7, 4, 7, 8],请删除列表li_one中的重复数据。
 '''
-li_one = [1, 2, 1, 2, 3, 5, 4, 3, 5, 7, 4, 7, 8]
+li_one = [1.py, 2, 1.py, 2, 3, 5, 4, 3, 5, 7, 4, 7, 8]
 set1=set(li_one)
 print(set1)
 '''

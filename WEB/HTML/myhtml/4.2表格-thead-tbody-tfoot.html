@@ -1,0 +1,49 @@
+
+<!doctype html>
+
+<html>
+
+    <head>
+        <title>thead、tbody、tfoot 不是必须的，只是这样做方便与后期JS代码编写</title>
+    </head> 
+    <body>
+        <table border='1px' width="50%">
+            <thead>
+                <tr>
+                    <th>员工编号</th>
+                    <th>员工薪资</th>
+                    <th>部门名称</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr >
+                    <td>2</td>
+                    <td>2</td>
+                    <td rowspan="2">2</td>
+                </tr>
+                <tr align='center'>
+                    <td colspan="2">3</td>
+                    <!--
+                        <td>3</td>
+                    -->
+                    <!--
+                        <td>3</td>
+                    -->
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+
+</html>

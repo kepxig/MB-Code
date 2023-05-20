@@ -1,0 +1,11 @@
+procedure program1(a, b);
+begin
+var xyz=50;
+while  a>b  do
+         begin
+if  xyz=0  then
+             xyz=50;
+          xyz:=xyz-a;
+          a:=a-1;
+         end
+end

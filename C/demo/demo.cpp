@@ -1,48 +1,53 @@
 #include <iostream>
 using namespace std;
-int POSorNEG(int Arr[], int N);
-int MaxSubsetSum(int arr[], int N);
-int main()
+#define MAXSIZE 100
+//交换
+void swap(int &a, int &b)
 {
-   int n;
-   cin >> n;
-   int a[n];
-   for (int i = 0; i < n; i++)
-      cin >> a[i];
-   if (POSorNEG(a, n))
-   {
-      int MaxSum = MaxSubsetSum(a, n);
-      cout << MaxSum << endl;
-   }
-   else
-      cout << 0 << endl;
+    int temp;
+    temp = a;
+    a = b;
+    b = temp;
 }
-int MaxSubsetSum(int Arr[], int N)
+//全排列递归算法
+void Perm(int list[], int k, int m)
 {
-   int ThisSum, MaxSum = 0;
-
-   for (int i = 0; i < N; i++)
-   {
-      ThisSum = 0;
-      for (int j = i; j < N; j++)
-      {
-         ThisSum += Arr[j];
-         if (MaxSum < ThisSum)
-            MaxSum = ThisSum;
-      }
-   }
-   return MaxSum;
+    // list 数组存放排列的数，K表示层 代表第几个数，m表示数组的长度
+    if (k == m)
+    {
+        // K==m 表示到达最后一个数，不能再交换，最终的排列的数需要输出；
+        for (int i = 0; i <= m; i++)
+            cout << list[i] << " ";
+        cout << endl;
+    }
+    else
+    {
+        for (int i = k; i <= m; i++)
+        {
+            swap(list[i], list[k]);
+            Perm(list, k + 1, m);
+            swap(list[i], list[k]);
+        }
+    }
 }
-int POSorNEG(int Arr[], int N)
+int main(void)
 {
-   int Temp = 0;
-   for (int i = 0; i < N; i++)
-   {
-      if (Arr[i] > 0)
-      {
-         Temp = 1;
-         break;
-      }
-   }
-   return Temp;
+    //  int a[] = {1, 2, 3};
+    // int m = 2;
+    // Perm(a, 0, 2);
+    int n, a[MAXSIZE];
+    scanf("%d", &n);
+    for (int i = 1; i <= n; i++)
+    {
+        a[i - 1] = i;
+    }
+    Perm(a, 0, n - 1);
+    /*
+  123
+  132
+  213
+  231
+  321
+  312
+*/
 }

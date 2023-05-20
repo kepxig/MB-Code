@@ -1,8 +1,11 @@
 {
 	"folders": [
 		{
-			"path": ".."
+			"path": "Python"
+		},
+		{
+			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {"files.defaultLanguage": "python",}
 }
