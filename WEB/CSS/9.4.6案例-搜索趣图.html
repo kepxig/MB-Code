@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .searchPic {
+            width: 238px;
+            height: 294px;
+            border: 1px solid #D9E0EE;
+            border-top: 3px solid orange;
+            margin: 200px;
+        }
+
+        .searchPic h3 {
+            height: 35px;
+            line-height: 35px;
+            border-bottom: 1px solid #D9E0EE;
+            font-size: 16px;
+            font-weight: normal;
+            padding-left: 12px;
+            /*h3继承了父级宽度，不会撑开盒子*/
+        }
+
+        .searchPic img {
+            margin: 7px 0 0 8px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .searchPic ul li a {
+            font-size: 12px;
+            color: #666;
+            text-decoration: none;
+        }
+
+        .searchPic ul {
+            margin-left: 8px;
+        }
+
+        .searchPic ul li {
+            padding-left: 10px;
+            height: 26px;
+            line-height: 26px;
+            background: url(./image/1684664005712.jpg) no-repeat 0 50%;
+            background-size: 5px;
+        }
+
+        .searchPic ul li a:hover {
+            text-decoration: underline;
+            color: #ff8400;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="searchPic">
+        <h3>搜索趣图</h3>
+        <img src="./image/1684664005712.jpg">
+        <ul>
+            <li><a href="#">罗玉凤</a></li>
+            <li><a href="#">周阴婷</a></li>
+            <li><a href="#">蔡依淋</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

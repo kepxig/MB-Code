@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /*
+            属性选择器(中括号[])
+                选取标签带有某些特殊属性的选择器
+        */
+        /*1*/
+        a[title]{
+            color:red;
+        }
+        /*2*/
+        input[type="text"]{
+            color:blue;
+        }
+        input[type="submit"]{
+            color:green;
+        }
+        /*3*/
+        div[class^="font"]{
+            /* ^在正则表达式中代表以.....开头*/
+            color:pink;
+        }
+        div[class$="footer"]{
+            /* $在正则表达式中代表以.....结尾*/
+            color:cyan;
+        }
+        div[class*="hehe"]{
+            /* *在正则表达式中代表含有.....*/
+            color:darkblue;
+        }
+    </style>
+</head>
+<body>
+    <a href="#" title="我是百度">百度</a>
+    <a href="#" title="我是新浪">新浪</a>
+    <a href="#">淘宝</a>
+    <a href="#">京东</a>
+    <br><hr>
+    <input type="text" value="文本框" disabled/>
+    <input type="text" value="文本框" readonly/>
+    <input type="text" value="文本框" />
+    <input type="submit" />
+    <input type="reset" />
+    <input type="button" />
+    <br><hr>
+    <div class="font12">呵呵</div>
+    <div class="font14">呵呵</div>
+    <div class="font16">呵呵</div>
+    <div class="18font">呵呵</div>
+    <div class="sub-footer">呵呵</div>
+    <div class="jd-footer">呵呵</div>
+    <div class="footer-nmsl">呵呵</div>
+    <div class="hehe-nmsl-xx">呵呵</div>
+    <div class="nmsl-hehe-xx">呵呵</div>
+    <div class="nmsl-xx-hehe">呵呵</div>
+</body>
+</html>

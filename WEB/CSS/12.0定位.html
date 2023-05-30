@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--
+        边偏移 
+            top
+            bottom
+            left
+            right   
+    -->
+    <!-- 
+        定位的模式
+            1.static 自动定位 默认    
+                        对于边偏移无效  作用:清除定位
+            2.relative 相对定位(占有位置 不脱标) 
+                相对于自己原来的位置定位  
+                        相对定位不脱离标准流 （浮动脱标）
+
+            3.absolute 绝对定位(不占位置 脱标)
+                1.相对于上一个已经定位的父级元素进行定位
+                
+                2.父级元素没定位
+                    相对于浏览器窗口定位
+                
+                子绝父相
+                    子绝对定位 父相对定位
+            4.fixed 固定定位 (不占位置，脱标，不随滚动条滚动)
+                相对于浏览器窗口(不是body，是当前窗口（会跟随当前窗口）)定位
+
+            脱标(position=absolute/fixed)  浮动(float) 会自动转换为inline-block 不用再display转换
+
+            z-index 
+    -->
+</body>
+
+</html>

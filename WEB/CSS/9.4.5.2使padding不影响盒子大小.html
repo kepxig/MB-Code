@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 30px;
+            border: 1px solid red;
+            padding-left: 20px;
+            /*
+                1.如果一个盒子没给定宽度高度,则padding不影响
+            */
+        }
+        nav{
+            width: 300px;
+            height: 40px;
+            border: 1px solid blue;
+            
+        }
+        p{
+            height: 20px;
+            background-color: hotpink;
+            /*因为p没指定宽度 默认继承父级元素*/
+            padding-left: 30px;
+            /*2.此时padding也不会影响盒子的宽度*/
+        }
+    </style>
+</head>
+<body>
+    <div>尼美舒利颗粒</div>
+    <nav>
+        <p>尼美舒利分散片</p>
+    </nav>
+</body>
+</html>

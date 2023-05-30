@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {/*0,0,0,1*/
+            color: pink;
+        }
+
+        .nmsl {/*0,0,1,0*/
+            color: blue;
+        }
+
+        div{
+            color:green!important;/* !important提升优先级(最高)*/
+        }
+
+        /*
+        类选择器和标签选择器 类选择器优先
+            作用域越小的优先级越大
+        
+        特殊性 specificity 
+        0,0,0,0
+            1.大→小，没有进制
+            2.继承的权重为0
+            3.权重相同 就近原则
+        */
+    </style>
+</head>
+
+<body>
+    <div class="nmsl">nmsl靴靴</div>
+</body>
+
+</html>

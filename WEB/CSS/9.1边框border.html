@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            border: 1px red solid;
+        }
+        div:first-child{/*结构伪类选择器*/
+            border-radius: 10px;
+        }
+        div:nth-child(2){
+            border-radius: 50%;
+        }
+        div:nth-child(3){
+            border-radius: 20px 40px;/*对角线*/
+
+        }
+        div:nth-child(4){
+            border-radius: 20px 40px 60px;/*顺时针*/
+        }
+
+    </style>
+</head>
+<body>
+    <div>10px</div>
+    <div>50%</div>
+    <div>20px 40px</div>
+    <div>20px 40px 60px</div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>

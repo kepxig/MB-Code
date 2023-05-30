@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: lightgreen;
+            width: 100px;
+            height: 100px;
+        }
+        input{
+            width: 200px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        1.块级元素:block-level
+            如div
+            块级元素的特点：
+                1.总是从新行开始
+                2.高度、行高、外边距和内边距 都可以控制
+                3.宽度默认是容器的100%
+                4.可以容纳内联元素和其他块元素
+                
+    -->
+    <div>123</div><br>
+    <div>456</div><br>
+    <div>789</div><br>
+
+    <br><br><br><hr>
+    <!--
+        2.行内元素(内联元素):inline-level
+            行内元素不占有独立的区域，仅仅靠自身的字体大小和图像尺寸来支撑结构，
+                一般可以不设置宽度、高度、对齐等属性，常用于控制页面中文本的样式。
+            常见的行内元素:<a> <span> <strong> <b> <em>...
+            
+            行内元素的特点:
+                1.和相邻行内元素在同一行上
+                2.高、宽无效，但水平方向的padding和margin可以设置
+                3.默认宽度就是他本身内容的宽度
+                4.行内元素只能容纳文本或其他行内元素(<a>特殊)
+                
+    -->
+    <span>123</span>
+    <span>456</span>
+    <span>789</span>
+
+    <br><br><br><hr>
+    <!--
+        *3.行内块元素:inline-block
+                既有块元素特点 又有行元素特点
+            <img/> <input/> <td>...
+            
+    -->
+    <input type="text"/>
+    <input type="text"/>
+    <input type="text"/>
+
+
+</body>
+</html>

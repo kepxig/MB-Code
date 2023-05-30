@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+        }
+        div:first-child {
+            background-color: pink;
+            box-sizing: content-box;
+            /*以前的盒模型(W3C)*/
+            padding: 10px;
+            border: 15px solid #000;
+            /* 
+            盒子大小为width+padding+border   
+            content-box:此值为默认值,让其维持W3C的标准Box Mode
+            */
+        }
+        div:last-child{
+            background-color: blue;
+            padding: 10px;
+            box-sizing: border-box;/*CSS3新增 不会撑开盒子*/
+            border: 15px solid #000;
+        }
+    </style>
+</head>
+
+<body>
+    <div>content-box</div>
+    <div></div>
+    <div>border-box</div>
+</body>
+
+</html>

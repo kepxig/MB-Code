@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /*
+            交集选择器(点.)
+                由两个选择器构成，   第一个为标签选择器，第二个为class选择器，两个选择器之间不能有空格 
+                如p.red
+        */
+        .red{
+            color: red;
+        }
+        p.red{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="red">123</div>
+    <div>456</div>
+    <div>789</div>
+
+    <p class="red">呵呵</p>
+    <p>哈哈</p>
+    <p>嘻嘻</p>
+</body>
+</html>

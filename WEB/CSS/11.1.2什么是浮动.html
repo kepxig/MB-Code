@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div:first-child {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            /* float:right ; */
+            float: left;
+            /* 浮动:漂浮在标准流的上面 上图层 */
+        }
+        div:last-child{
+            width: 150px;
+            height: 300px;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    元素的浮动是指设置了浮动属性的元素会脱离标准普通流的控制,移动到其父元素中指定位置的过程。
+<div></div>
+<div></div>
+如果两个盒子都不加浮动，就是标准流 自上而下 从左往右
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .slider {
+            width: 520px;
+            height: 280px;
+            background-color: lightblue;
+            position: relative;
+        }
+
+        .container {
+            margin: 0 auto;
+        }
+
+        .arrow-l,
+        .arrow-r {
+            position: absolute;
+            display: block;
+            margin-top: -15px;
+            opacity: 75%;
+
+        }
+
+        .arrow-l {
+            top: 50%;
+            left: 0;
+        }
+
+        .arrow-r {
+            top: 50%;
+            right: 0;
+        }
+
+        .slider ul {
+            list-style: none;
+            width: 65px;
+            height: 13px;
+            background-color:rgba(255, 255, 255,0.2);
+            border-radius: 6px;
+            position: absolute;
+            bottom: 15px;
+            left: 50%;
+            margin-left: -32.5px;
+        }
+
+        .slider ul li {
+            width: 9px;
+            height: 9px;
+            background-color: #B7B7B7;
+            float: left;
+            margin: 2px;
+            border-radius: 50%;
+        }
+        .current{
+            background-color: #f40 !important;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="slider container">
+        <img src="./images/taobao.avif" width="520px" height="280px" alt="">
+        <a href="#" class="arrow-l"><img src="./images/1684664005712.jpg" width="20px" height="30px" alt=""></a>
+        <a href="#" class="arrow-r"><img src="./images/1684664005712.jpg" width="20px" height="30px" alt=""></a>
+        <ul>
+            <li class="current"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+
+</html>

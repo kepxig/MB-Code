@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* css初始化 */
+        /* 清除内外边距 */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 去除列表样式 */
+        ul {
+            list-style: none;
+        }
+
+        /* 清除浮动 */
+        .clearfix:before,
+        .clearfix:after {
+            display: table;
+            content: "";
+        }
+
+        .clearfix:after {
+            clear: both;
+        }
+
+        .clearfix {
+            *zoom: 1
+        }
+
+        body {
+            width: 1520px;
+            background-color: #f3f5f7;
+        }
+
+        .container {
+            /*版心*/
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* css初始化结束 */
+        /* header start */
+        header {
+            height: 100px;
+            /* background-color: #f3f5f7; */
+            overflow: hidden;
+        }
+
+        nav.container {
+            height: 42px;
+            /* background-color:#f3f5f7; */
+            margin: 30px auto;
+        }
+
+        input {
+            border: 0;
+            box-sizing: border-box;
+            /*CSS3盒子模型 使border和padding都包含到width里(不会被撑开)*/
+        }
+
+        .logo {
+            float: left;
+        }
+
+        /* 导航栏部分 */
+        .navbar {
+            float: left;
+            height: 42px;
+            line-height: 42px;
+            /*行高给父亲 会继承给li*/
+            margin-left: 60px;
+
+        }
+
+        .navbar li {
+            float: left;
+            margin: 0 15px;
+            font-size: 18px;
+
+        }
+
+        .navbar li a {
+            color: #050505;
+            text-decoration: none;
+
+        }
+
+        .navbar li a:hover {
+            border-bottom: 2px solid #00a4ff;
+        }
+
+        /* 搜索框部分 */
+        .search {
+            width: 410px;
+            height: 42px;
+            border: 0.2px solid #00a4ff;
+            float: right;
+
+        }
+
+        .search input[type=text] {
+            width: 360px;
+            height: 41.6px;
+            padding-left: 20px;
+            float: left;
+        }
+
+        .search input[type=submit] {
+            background: #00a4ff url(./images/fa-search.png) 50% 50% no-repeat;
+            width: 50px;
+            height: 42px;
+            float: left;
+        }
+
+        /* 个人中心部分 */
+        .user {
+            float: right;
+            height: 42px;
+            line-height: 42px;
+            font-size: 14px;
+            margin: 0 30px 0 70px;
+        }
+
+        .user a {
+            text-decoration: none;
+            color: #666;
+
+        }
+
+        .user img {
+            margin: 0 10px;
+            border-radius: 50%;
+        }
+
+        /* header end */
+
+        /*banner start*/
+        .banner {
+            height: 420px;
+            background-color: #1c036c;
+        }
+
+        .banner-in {
+            height: 420px;
+            background: url(./images/banner2.png) 0 0 no-repeat;
+        }
+
+        /*左侧导航栏*/
+        .subnav {
+            height: 420px;
+            width: 185px;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 7.5px 20px;
+            box-sizing: border-box;
+            float: left;
+        }
+
+        .subnav ul li {
+            /*45*9=405 设置padding15/2=7.5*/
+            height: 25px;
+            margin: 18px 0;
+            line-height: 25px;
+        }
+
+        .subnav ul li a {
+            font-size: 14px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .subnav ul li a:hover {
+            color: #00a4ff;
+        }
+
+        .subnav ul li a span {
+            float: right;
+            font-family: arial;
+        }
+
+        .subnav ul li:hover::after {
+            content: '';
+            width: 750px;
+            height: 420px;
+            background: url(./images/zyt.jpg) round;
+            position: absolute;
+            top: 100px;
+            left: 345px;
+            z-index: 99999;
+            /*透明度*/
+            opacity: 70%;
+        }
+
+        /*右侧课表*/
+        .course {
+            float: right;
+            width: 230px;
+            height: 300px;
+            background-color: #fff;
+            margin-top: 50px;
+        }
+
+        .course dt {
+            color: #fff;
+            background-color: #9bceea;
+            /* height: 48px; */
+            line-height: 48px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .course dd {
+            margin: 0 20px;
+            padding: 12px 0;
+            border-bottom: 1px solid #eaeaea;
+        }
+
+        .course dd:last-child {
+            border: 0;
+        }
+
+
+        .course dd a {
+            color: #4e4e4e;
+            text-decoration: none;
+
+        }
+
+        .course dd a p {
+            font-size: 12px;
+            color: #a5a5a5;
+        }
+
+
+        .course .more {
+            width: 198px;
+            color: #00a4ff;
+            height: 38px;
+            line-height: 38px;
+            text-align: center;
+            display: block;
+            border: 1px solid #22b0ff;
+            font-weight: 700;
+        }
+
+        .course .more:hover {
+            background-color: #00a4ff;
+            color: #fff;
+        }
+
+        /*banner end*/
+        .recommend {
+            height: 60px;
+            line-height: 60px;
+            background-color: #fff;
+            margin-top: 8px;
+            /*盒子阴影 水平位置 垂直位置  阴影范围 阴影颜色*/
+            box-shadow: 0 2px 3px 3px rgba(0, 0, 0, 0.1);
+
+        }
+
+        .recommend h4 {
+            height: 60px;
+            padding: 0 30px;
+            float: left;
+            color: #22b0ff;
+            border-right: 1px solid #ccc;
+        }
+
+        .recommend li {
+            padding: 0 30px;
+            border-right: 1px solid #ccc;
+            /* height: 60px; */
+            float: left;
+        }
+
+        .recommend a {
+            text-decoration: none;
+            color: #050505;
+        }
+
+        .recommend a:hover {
+            color: #00a4ff;
+        }
+
+        .recommend>a {
+            color: #00a4ff;
+            font-size: 14px;
+            padding: 0 30px;
+            float: right;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!--结构-->
+    <!--header部分-->
+    <header>
+        <nav class="container">
+            <!--logo部分-->
+            <div class="logo">
+                <img src="./images/logo.png " alt="">
+            </div>
+            <!--导航栏部分-->
+            <div class="navbar">
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">课程</a></li>
+                    <li><a href="#">职业规划</a></li>
+                </ul>
+            </div>
+            <!-- 个人中心部分  -->
+            <div class="user">
+                <a href="#">个人中心</a>
+                <img src="./images/zyt.jpg" height="30px" alt="">
+                <a href="#"> 周阴婷</a>
+            </div>
+            <!--搜索框部分-->
+            <div class="search">
+                <form action="">
+                    <input type="text" placeholder="请输入关键词">
+                    <!-- 占位符placeholder -->
+                    <input type="submit" value="">
+                </form>
+            </div>
+        </nav>
+    </header>
+    <!--banner 部分-->
+    <div class="banner">
+        <div class="banner-in container">
+            <!--左侧导航栏-->
+            <div class="subnav">
+                <ul>
+                    <li><a href="#">前端开发 <span>></span></a></li>
+                    <li><a href="#">后端开发 <span>></span></a></li>
+                    <li><a href="#">移动开发 <span>></span></a></li>
+                    <li><a href="#">人工智能 <span>></span></a></li>
+                    <li><a href="#">商业预测 <span>></span></a></li>
+                    <li><a href="#">云计算&大数据 <span>></span></a></li>
+                    <li><a href="#">运维&测试 <span>></span></a></li>
+                    <li><a href="#">UI设计 <span>></span></a></li>
+                    <li><a href="#">产品 <span>></span></a></li>
+                </ul>
+            </div>
+            <!--右侧课表-->
+            <dl class="course">
+                <dt>我的课程表
+                <dd><a href="#">
+                        <h4>继续学习 女德</h4>
+                        <p>正在学习-男人说的全都是对的</p>
+                    </a></dd>
+                <dd><a href="#">
+                        <h4>继续学习 如何做个好女人</h4>
+                        <p>正在学习-没有差女人只有懒女人</p>
+                    </a></dd>
+                <dd><a href="#">
+                        <h4>继续学习 如何勾引男人</h4>
+                        <p>正在学习-勾引男人的1300个小技巧</p>
+                    </a></dd>
+                <dd><a href="#" class="more">全部课程</a></dd>
+                </dt>
+            </dl>
+        </div>
+    </div>
+    <!--精品推荐部分-->
+    <div class="recommend container">
+        <h4>精品推荐</h4>
+        <ul>
+            <li><a href="#">JQuery</a></li>
+            <li><a href="#">Spark</a></li>
+            <li><a href="#">MySQL</a></li>
+            <li><a href="#">javaWeb</a></li>
+            <li><a href="#">NMSL</a></li>
+            <li><a href="#">IDKH</a></li>
+        </ul>
+        <a href="#">修改兴趣</a>
+    </div>
+
+    <div class="main"></div>
+    <div class="footer"></div>
+</body>
+
+</html>
