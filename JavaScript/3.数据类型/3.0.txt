@@ -1,0 +1,39 @@
+目标
+——————
+1.能说出5种简单的数据类型
+    数字型 字符串型 布尔型boolean 未定义undefined 空值null(object)
+
+2.能使用typeof获取变量的类型
+    number string boolean undefined object
+
+3.能说出1-2种转换为数值型的方法
+    parseInt()
+    parseFloat()
+    Number
+    隐式 - * /
+
+4.能说出1-2种转换为字符型的方法
+    .toString
+    String()
+    连接 +
+
+5.能说出什么是隐式转换
+    字符型的变量通过算法运算 (- * /)后被隐式转换为数字型
+
+变量的数据类型
+    JS是一种 弱类型 或者说 动态语言。 这意味不用提前声明变量类型。
+    JS的变量数据类型是只有程序在运行过程中,根据等号右边的值来确定的
+        var num=10;
+        var str='nmsl';
+
+        var x=10;
+        x='nmsl'
+    
+数据类型的分类
+    简单数据类型
+        Number:数字型(整型+浮点型)
+        Bollean:
+    复杂数据类型
+
+    
+    

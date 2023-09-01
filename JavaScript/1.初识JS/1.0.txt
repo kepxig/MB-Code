@@ -1,0 +1,40 @@
+目标
+——————
+1.能说出JavaScript是什么
+    是运行在客户端的脚本语言
+
+    脚本语言：不需要编译，运行过程中由js解释器(引擎)逐行解释并执行
+
+    现在也可以基于Node.js 技术进行服务器端编程
+
+2.能知道JS的发展历史
+    Brendan Eich
+
+    LiveScript —> JavaScript
+
+3.能说出浏览器执行JS的原理
+    浏览器分成两部分 渲染引擎 和 JS引擎
+        渲染引擎:用来解析HTML和CSS，俗称 内核 ,比如Chrome浏览器的blink,老版本的webkit
+        JS引擎:也称为JS解释器,用来读取网页中的JS代码,对其处理后运行,比如Chrome浏览器的V8
+
+
+4.能说出JS由哪三部分组成
+    ECMA Script(JavaScript语法)
+    DOM(页面文档对象模型)
+    BOM(浏览器对象模型)
+
+5.能写出JS三个输入输出语句 
+    JS有三种书写位置:行内 内嵌 外部
+
+    alert()
+    console.log()
+    prompt()
+
+6.JS的作用
+    1.表单动态校验(密码强度检测)——JS产生的目的
+    2.网页特效
+    3.服务端开发(Node.js)
+    4.桌面程序(Electron)
+    5.App(Cordova)
+    6.控制硬件-物联网(Ruff)
+    7.游戏开发(cocos2d-js)……

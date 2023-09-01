@@ -65,12 +65,12 @@
             "type": "python",
             "request": "launch",
             "stopOnEntry": false,
-            "python": "D:\\3\\Anaconda\\python.exe",
+            "python": "C:\\Users\\kepxig\\anaconda3\\python.exe",
             "program": "${file}",
             "cwd": "${fileDirname}",
             "env": {},
             "envFile": "${workspaceFolder}/.env",
-            "console": "externalTerminal",
+           // "console": "externalTerminal",
         }
     ]
 }
