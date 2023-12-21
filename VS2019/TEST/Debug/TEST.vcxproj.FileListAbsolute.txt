@@ -1,1 +1,0 @@
-D:\.MB-Code\VS2019\TEST\Debug\TEST.exe

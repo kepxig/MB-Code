@@ -64,7 +64,8 @@
         "CIRCFILL.C": "cpp",
         "ScanLineFill.C": "cpp",
         "graphics.h": "c",
-        "CircleSeedFill.C": "cpp"
+        "CircleSeedFill.C": "cpp",
+        "ProbSurf.C": "cpp"
     },
     "cmake.sourceDirectory": "C:/.Github/MB-Code/CPP/study/C++",
 }
