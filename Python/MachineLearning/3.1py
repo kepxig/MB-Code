@@ -1,0 +1,30 @@
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.model_selection import train_test_split
+
+# 创建数据集
+# 向量1的数据
+X1 = [[30], [25], [20], [35], [22]]
+y1 = ['晴天', '多云', '雨天', '晴天', '雨天']
+
+# 向量2的数据
+X2 = [[4.5], [3.0], [2.5], [4.8], [2.0]]
+y2 = ['好', '一般', '差', '好', '差']
+
+# 创建决策树分类器
+clf1 = DecisionTreeClassifier()
+clf2 = DecisionTreeClassifier()
+
+# 训练模型
+clf1.fit(X1, y1)
+clf2.fit(X2, y2)
+
+# 预测
+# 这里你可以提供一个新的属性值，让决策树预测类标号
+new_data1 = [[28]]
+new_data2 = [[4.2]]
+
+prediction1 = clf1.predict(new_data1)
+prediction2 = clf2.predict(new_data2)
+
+print("向量1的预测结果:", prediction1)
+print("向量2的预测结果:", prediction2)

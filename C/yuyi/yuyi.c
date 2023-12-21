@@ -6,7 +6,6 @@ int main()
     char sentence[100];
     char subject[20] = "", verb[20] = "", object[20] = "";
     char* token;
-
     printf("Enter a sentence: ");
     fgets(sentence, 100, stdin);
 

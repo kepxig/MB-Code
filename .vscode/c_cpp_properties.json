@@ -3,17 +3,25 @@
         {
             "name": "Kepxig",
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**",
+                "c:\\4\\mingw64\\bin\\../lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../include/c++/12.2.0",
+                "c:\\4\\mingw64\\bin\\../lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../include/c++/12.2.0/x86_64-w64-mingw32",
+                "c:\\4\\mingw64\\bin\\../lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../include/c++/12.2.0/backward",
+                "c:\\4\\mingw64\\bin\\../lib/gcc/x86_64-w64-mingw32/12.2.0/include",
+                "c:\\4\\mingw64\\bin\\../lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../include",
+                "c:\\4\\mingw64\\bin\\../lib/gcc/x86_64-w64-mingw32/12.2.0/include-fixed",
+                "c:\\4\\mingw64\\bin\\../lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/include"
             ],
             "defines": [
                 "_DEBUG",
                 "UNICODE",
                 "_UNICODE"
             ],
-            "compilerPath": "D:\\4\\Dev-Cpp\\MinGW64\\bin\\gcc.exe",
+            "compilerPath": "C:\\4\\mingw64\\bin\\gcc.exe",
             "cStandard": "gnu17",
             "cppStandard": "gnu++14",
-            "intelliSenseMode": "windows-gcc-x64"
+            "intelliSenseMode": "windows-gcc-x64",
+            "configurationProvider": "ms-vscode.cmake-tools"
         }
     ],
     "version": 4

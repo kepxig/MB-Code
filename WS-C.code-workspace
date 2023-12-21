@@ -13,6 +13,8 @@
 	"settings": {
 		"files.defaultLanguage": "c",
 		"files.associations": {
+			"*.py": "python",
+			"*.dmp": "bat",
 			"array": "cpp",
 			"atomic": "cpp",
 			"*.tcc": "cpp",
@@ -51,7 +53,8 @@
 			"sstream": "cpp",
 			"stdexcept": "cpp",
 			"streambuf": "cpp",
-			"typeinfo": "cpp"
+			"typeinfo": "cpp",
+			"CIRCFILL.C": "cpp"
 		}
 	}
 }

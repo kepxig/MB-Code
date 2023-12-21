@@ -20,6 +20,8 @@
     
     
     "files.associations": {
+        "*.py": "python",
+        "*.dmp": "bat",
         "array": "cpp",
         "atomic": "cpp",
         "*.tcc": "cpp",
@@ -58,6 +60,11 @@
         "sstream": "cpp",
         "stdexcept": "cpp",
         "streambuf": "cpp",
-        "typeinfo": "cpp"
+        "typeinfo": "cpp",
+        "CIRCFILL.C": "cpp",
+        "ScanLineFill.C": "cpp",
+        "graphics.h": "c",
+        "CircleSeedFill.C": "cpp"
     },
+    "cmake.sourceDirectory": "C:/.Github/MB-Code/CPP/study/C++",
 }
