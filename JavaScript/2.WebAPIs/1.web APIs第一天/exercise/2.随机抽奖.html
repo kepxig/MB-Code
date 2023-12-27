@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>年会抽奖</title>
+  <style>
+    .wrapper {
+      width: 840px;
+      height: 420px;
+      background: url(./images/bg01.jpg) no-repeat center / cover;
+      padding: 100px 250px;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <strong>传智教育年会抽奖</strong>
+    <h1>一等奖：<span id="one">???</span></h1>
+    <h3>二等奖：<span id="two">???</span></h3>
+    <h5>三等奖：<span id="three">???</span></h5>
+  </div>
+  <script>
+    const giftArr = ['胡艺莲', '那艺娜', '三梦奇缘', '桔子姐爱吃', '施柔儿']
+    // 一等奖
+    const firstRandom = [Math.floor(Math.random() * giftArr.length)]
+    // console.log(giftArr[firstRandom]);
+    // 获取元素
+    const one = document.querySelector('#one')
+    one.innerHTML = giftArr[firstRandom]
+    // 删除已中奖的
+    giftArr.splice(firstRandom, 1)
+    const secondRandom = [Math.floor(Math.random() * giftArr.length)]
+    const two = document.querySelector('#two')
+    two.innerHTML = giftArr[secondRandom]
+    giftArr.splice(secondRandom, 1)
+    const thirdRandom = [Math.floor(Math.random() * giftArr.length)]
+    const three = document.querySelector('#three')
+    three.innerHTML = giftArr[thirdRandom]
+    giftArr.splice(thirdRandom, 1)
+  </script>
+</body>
+
+</html>

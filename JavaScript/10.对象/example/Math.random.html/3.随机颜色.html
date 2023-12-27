@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 生成随机颜色
+        // 需求：该函数接收一个布尔型参数，表示颜色的格式是十六进制的rgb格式
+        // 如果参数传递的是true或者无参数，则输出一个 随机十六进制的颜色
+        // 如果参数传递的是false，则输出一个随机rgb的颜色
+        // 自定义一个随机颜色函数
+        function getRandomColor(flag=true) {
+            // 如果true 返回 十六进制
+            // 否则 返回rgb
+            if (flag) {
+                let colorArr = ['0', '1', '2', '3','4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f']
+                let outStr = '#'
+                for (let i = 0; i < 6; i++) {
+                    let j = Math.floor(Math.random() * colorArr.length)
+                    outStr += colorArr[j]
+                }
+                return outStr
+            }
+            else {
+                let r = Math.floor(Math.random() * 256)
+                let g = Math.floor(Math.random() * 256)
+                let b = Math.floor(Math.random() * 256)
+                return `rgb(${r},${g},${b})`
+            }
+        }
+        console.log(getRandomColor(true))
+        console.log(getRandomColor())
+        console.log(getRandomColor(false))
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
