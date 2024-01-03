@@ -51,10 +51,10 @@
     当抽取到最后一个数据的时候，两个按钮同时禁用（写点开始里面，只剩最后一个数据不用抽了）
     核心：利用定时器快速展示，停止定时器结束展示 
     -->
-    <h2>随机点名</h2>
+    <h2>通讯录世界大战</h2>
     <div class="box">
         <span>名字是：</span>
-        <div class="qs">这里显示姓名</div>
+        <div class="qs">请选择你的英雄</div>
     </div>
     <div class="btns">
         <button class="start">开始</button>
@@ -63,7 +63,35 @@
 
     <script>
         // 数据数组
-        const arr = ['马超', '黄忠', '赵云', '关羽', '张飞']
+        const arr = ['三梦奇缘', '万人迷', '那艺娜', '胡艺莲', 'Jane🐛']
+
+        // 获取元素
+        const qs = document.querySelector('.qs')
+        const start = document.querySelector('.start')
+        const end = document.querySelector('.end')
+        // 定时器
+        // 声明为全局变量
+        let clock = 0
+        let random = 0
+        start.addEventListener('click', function () {
+            clock = setInterval(() => {
+                random = parseInt(Math.random() * arr.length)
+                qs.innerHTML = arr[random]
+            }, 50);
+            // 如果只剩最后一个数 禁用按钮
+            if (arr.length === 1) {
+                // start.disabled=true
+                // end.disabled=true 
+                start.disabled = end.disabled = true
+                document.write('恭喜'+arr[0]+'成为通讯录女王！');
+            }
+        })
+        // 事件监听
+        end.addEventListener('click', function () {
+            clearInterval(clock)
+            console.log(arr[random] + '鼠了!')
+            arr.splice(random, 1)
+        })
 
 
     </script>

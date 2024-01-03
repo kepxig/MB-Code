@@ -68,4 +68,5 @@
         "ProbSurf.C": "cpp"
     },
     "cmake.sourceDirectory": "C:/.Github/MB-Code/CPP/study/C++",
+    "liveServer.settings.port": 5501,
 }
